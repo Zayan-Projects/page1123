@@ -1,0 +1,467 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Top Announcement Bar --- */
+.top-announcement {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-announcement a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* --- Header / Navigation Bar --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav ul li a {
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    padding-left: 35px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    width: 300px;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 50px 50px 0 50px;
+    height: 600px; 
+    overflow: hidden; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    z-index: 2; 
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.shop-now-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 45%;
+    height: 100%;
+    background-image: url('Rectangle\ 2.png'); 
+    background-color: #dcdcdc;
+    background-size: cover; 
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 1; 
+}
+
+
+/* --- Brands Section --- */
+.brands-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    border-top: 1px solid #1a1a1a;
+}
+
+
+/* --- General Section Titles --- */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 80px 0 40px 0;
+}
+.section-title-large {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 100px 0 50px 0;
+}
+
+/* --- Products Section (New Arrivals & Top Selling) --- */
+.products-section {
+    padding: 0 50px;
+    position: relative;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 15px;
+    width: 280px; 
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-image {
+    height: 250px; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden; 
+    background-color: #f1f1f1; 
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.product-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.rating-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: gold; 
+}
+
+.product-price, .product-price-discount {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.discount-tag {
+    color: #ff006e; 
+    background-color: #ff006e1a; 
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.view-all-btn {
+    border: 1px solid #333;
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* --- Browse By Dress Style Section --- */
+.style-browse-section {
+    padding: 0 50px;
+}
+
+.style-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f1f1f1; 
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.style-card {
+    height: 250px; 
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000; 
+    background-color: #ccc; 
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #e0e0e0;
+}
+
+
+.casual { 
+    background-image: url('casual.webp'); 
+    color: #fff;
+}
+.formal { 
+   
+    background-image: url('formal.jpg'); 
+    color: #fff;
+} 
+.party { 
+    
+    background-image: url('party.jpg'); 
+    color: #fff;
+}
+.gym { 
+   
+    background-image: url('gym.jpg'); 
+    color: #fff;
+}
+
+
+
+
+.testimonials-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 30px;
+    width: 330px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.card-header {
+    margin-bottom: 10px;
+}
+
+.customer-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+.newsletter-section {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-section h2 {
+    font-size: 28px;
+    font-weight: 800;
+    width: 70%;
+    line-height: 1.2;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.newsletter-form input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* --- Footer --- */
+.site-footer {
+    padding: 80px 50px 20px 50px;
+    background-color: #f8f8f8; 
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; 
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.footer-col ul {
+    font-size: 14px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ddd; 
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+}
